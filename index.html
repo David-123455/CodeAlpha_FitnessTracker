@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness Tracker App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Fitness Tracker App</h1>
+
+    <!-- Goal Section -->
+    <div class="goal-section">
+      <h2>Set Your Fitness Goal</h2>
+      <input type="text" id="goal-type" placeholder="e.g. Run, Weight Lift" />
+      <input type="number" id="goal-duration" placeholder="Goal duration (in minutes)" />
+      <button onclick="setGoal()">Set Goal</button>
+    </div>
+
+    <!-- Workout Log Section -->
+    <div class="workout-log">
+      <h2>Log Your Workout</h2>
+      <input type="text" id="exercise-type" placeholder="Exercise Type (e.g. Run, Squats)" />
+      <input type="number" id="duration" placeholder="Duration (minutes)" />
+      <input type="number" id="calories-burned" placeholder="Calories Burned" />
+      <button onclick="logWorkout()">Log Workout</button>
+    </div>
+
+    <!-- Workout History Section -->
+    <div class="workout-history">
+      <h2>Your Workout History</h2>
+      <ul id="history-list"></ul>
+    </div>
+
+    <!-- Progress Section -->
+    <div class="progress-section">
+      <h2>Your Progress</h2>
+      <p>Total Workouts: <span id="total-workouts">0</span></p>
+      <p>Calories Burned: <span id="total-calories">0</span></p>
+      <p>Goal: <span id="goal-status">No goal set</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
